@@ -1,0 +1,10 @@
+<h1>All the bees:</h1>
+
+<ul>
+    <% @bees.each do |bee| %>
+        <li>
+            <%= link_to bee.name, edit_bee_path(bee) %>
+        </li>
+    <%end%>
+</ul>
+ 

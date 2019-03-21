@@ -1,0 +1,11 @@
+<h1>Flowers:</h1>
+
+<ul>
+    <% @flowers.each do |flower| %>
+        <li><%= link_to flower.name, flower %></li>
+    <% end %>
+</ul>
+
+<%= link_to  "New Flower", new_flower_path %>
+
+
